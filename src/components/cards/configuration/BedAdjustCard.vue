@@ -1,11 +1,11 @@
 <template>
   <collapsable-card
-    title="Bed Adjustments"
+    :title="$t('Bed Adjustments')"
     icon="$bedMesh">
     <v-card>
-      <v-card-title>z-adjust</v-card-title>
+      <v-card-title>{{$t('BedAdjustCard.z-adjust')}}</v-card-title>
       <v-card-text>
-        <v-btn @click="sendGcode('Z_ENDSTOP_CALIBRATE')">adjust-z</v-btn>
+        <v-btn @click="sendGcode('Z_ENDSTOP_CALIBRATE')">{{$t('BedAdjustCard.adjust-z')}}</v-btn>
         <v-chip>{{ pendingSave }}</v-chip>
         <p>
           PROBE_CALIBRATE<br />

@@ -23,7 +23,7 @@
           block
           color="secondary"
           class="mr-2">
-          Retract
+          {{$t('ExtruderMovesWidget.Retract')}}
           <v-icon>$chevronUp</v-icon>
         </v-btn>
       </v-col>
@@ -50,7 +50,7 @@
           block
           color="secondary"
           class="mr-2">
-          Extrude
+          {{$t('ExtruderMovesWidget.Extrude')}}
           <v-icon>$chevronDown</v-icon>
         </v-btn>
       </v-col>

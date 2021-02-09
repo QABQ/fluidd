@@ -1,30 +1,30 @@
 <template>
   <collapsable-card
-    title="Tool"
+    :title="$t('ToolheadSettingsCard.Tool')"
     cardKey="ToolSettings"
     icon="$printer3dNozzle">
     <v-card-text>
       <v-switch
         class="mt-0 mb-4"
-        label="Invert X"
+        :label="$t('ToolheadSettingsCard.Invert X')"
         hide-details
         v-model="invertX">
       </v-switch>
       <v-switch
         class="mt-0 mb-4"
-        label="Invert Y"
+        :label="$t('ToolheadSettingsCard.Invert Y')"
         hide-details
         v-model="invertY">
       </v-switch>
       <v-switch
         class="mt-0 mb-4"
-        label="Invert Z"
+        :label="$t('ToolheadSettingsCard.Invert Z')"
         hide-details
         v-model="invertZ">
       </v-switch>
       <v-text-field
         filled
-        label="Default Extrude Length"
+        :label="$t('ToolheadSettingsCard.Default Extrude Length')"
         suffix="mm"
         v-model="defaultExtrudeLength"
       ></v-text-field>
@@ -36,20 +36,20 @@
       ></v-text-field>
       <v-select
         filled
-        label="Default toolhead move length"
+        :label="$t('ToolheadSettingsCard.Default toolhead move length')"
         suffix="mm"
         :items="['0.1', '1.0', '10', '100']"
         v-model="defaultToolheadMoveLength">
       </v-select>
       <v-text-field
         filled
-        label="Toolhead XY Move Speed"
+        :label="$t('ToolheadSettingsCard.Toolhead XY Move Speed')"
         suffix="mm/s"
         v-model="defaultToolheadXYSpeed"
       ></v-text-field>
       <v-text-field
         filled
-        label="Toolhead Z Move Speed"
+        :label="$t('ToolheadSettingsCard.Toolhead Z Move Speed')"
         suffix="mm/s"
         v-model="defaultToolheadZSpeed"
       ></v-text-field>

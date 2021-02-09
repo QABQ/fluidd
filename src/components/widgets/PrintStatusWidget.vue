@@ -37,7 +37,7 @@
               <template v-slot:activator="{ on, attrs }">
                 <v-icon v-bind="attrs" v-on="on" color="grey darken-2" class="mr-1">$filamentEstimate</v-icon>
               </template>
-              used filament
+              {{$t('PrintStatusWidget.used filament')}}
             </v-tooltip>
             <span class="grey--text text--darken-2">{{ filamentEstimates }}</span>
           </div>

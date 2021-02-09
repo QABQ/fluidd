@@ -1,12 +1,12 @@
 
 <template>
   <collapsable-card
-    title="Themes"
+    :title="$t('ThemeSettingsCard.Themes')"
     cardKey="ThemeSettings"
     icon="$cogs">
     <v-card-text>
       <v-select
-        label="Theme"
+        :label="$t('ThemeSettingsCard.Theme')"
         v-model="theme"
         :items="['dark', 'light']">
       </v-select>

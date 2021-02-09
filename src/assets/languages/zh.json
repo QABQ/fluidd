@@ -1,0 +1,262 @@
+{
+  "AppBar": {
+    "Dashboard": "仪表盘",
+    "Jobs": "任务列表",
+    "Printer": "打印机",
+    "Emergency Stop": "紧急停止"
+  },
+  "AppDrawer": {
+    "Dashboard": "仪表盘",
+    "Jobs": "任务列表",
+    "Printer Configuration": "打印机配置文件",
+    "UI Settings": "UI 设置"
+  },
+  "BedAdjustCard": {
+    "Bed Adjustments": "热床调整",
+    "z-adjust": "z-调整",
+    "adjust-z": "调整-z"
+  },
+  "BedMeshCard": {
+    "Bed Mesh": "网格热床"
+  },
+  "EndStopsCard": {
+    "Endstops": "限位",
+    "Use the refresh button to update endstop status": "刷新限位状态"
+  },
+  "LogsCard": {
+    "Printer Logs": "打印机日志"
+  },
+  "CameraCard": {
+    "Camera": "摄影机"
+  },
+  "ConsoleCard": {
+    "Console": "控制台",
+    "Hide temp waits": "隐藏等待时的温度打印"
+  },
+  "MacrosCard": {
+    "Macros": "宏"
+  },
+  "OutputsCard": {
+    "Fans Outputs": "风扇 & 输出"
+  },
+  "PrinterLimitsCard": {
+    "Printer Limits": "打印机极限值"
+  },
+  "StatusCard": {
+    "Status": "状态",
+    "Pause": "暂停",
+    "Cancel": "取消",
+    "Resume": "恢复",
+    "Reset File": "重置文件",
+    "Reprint": "重新打印",
+    "Are you sure? This will cancel your print": "请确认这将取消当前打印任务"
+  },
+  "TemperatureGraphCard": {
+    "Thermals Graph": "温度趋势图"
+  },
+  "ToolheadCard": {
+    "Tool": "加热端工具",
+    "extruder disabled, below min_extrude_temp": "挤出机已禁用,因为温度低于 min_extrude_temp ",
+    "MOTORS OFF": "关闭电机",
+    "Bed_Screws_Adjust": "Bed_Screws_Adjust",
+    "Screws_Tilt_Calculate": "Screws_Tilt_Calculate",
+    "Z_Tilt_Adjust": "Z_Tilt_Adjust",
+    "QGL": "龙门架调整"
+  },
+  "ToolsCard": {
+    "Tabbed Tools": "选项卡工具栏",
+    "Thermals": "加热组件",
+    "Jobs": "任务列表"
+  },
+  "CameraSettingsCard": {
+    "Camera": "摄影机",
+    "Enabled": "启用",
+    "Flip horizontally": "水平翻转",
+    "Flip vertically": "垂直翻转",
+    "Stream type": "视频流类型",
+    "Camera URL": "摄像机地址"
+  },
+  "GeneralSettingsCard": {
+    "Misc": "基础",
+    "Enable Jobs on Dashboard": "在仪表盘上启用任务列表"
+  },
+  "MacroSettingsCard": {
+    "Macros": "宏",
+    "Configure which macros appear on the dashboard": "配置哪些宏显示在仪表盘上"
+  },
+  "PrintTimeEstimateSettingsCard": {
+    "Print Times": "打印时间",
+    "Duration Only": "仅持续时间",
+    "Similar to a klipper LCD, this only shows duration with no estimates": "与klipper LCD相似，它仅显示持续时间，没有估算值。",
+    "Uses the slicer estimates for display, You must enable this in your slicer": "使用切片器估计值进行显示, 您必须在切片器中启用它。",
+    "Takes progress percent, and duration to estimate total duration": "采用进度百分比和持续时间来估算总持续时间。",
+    "More accurate over time": "随着时间的推移更加准确。",
+    "Takes used filament vs estimated filament to estimate total duration": "将用过的灯丝与估计的灯丝进行比较以估计总持续时间。"
+  },
+  "TemperaturePresetSettingsCard": {
+    "Temperature Presets": "预设温度",
+    "Apply predefined temperatures on the dashboard": "在仪表板上应用预定义的温度",
+    "Add preset": "添加预设",
+    "Edit preset": "编辑预设",
+    "Preset Name": "预设名称",
+    "Cancel": "取消",
+    "Save": "保存",
+    "Add": "添加"
+  },
+  "ThemeSettingsCard": {
+    "Themes": "主题",
+    "Theme": "主题"
+  },
+  "ToolheadSettingsCard": {
+    "Tool": "加热头工具",
+    "Invert X": "反转 X",
+    "Invert Y": "反转 Y",
+    "Invert Z": "反转 Z",
+    "Default Extrude Length": "默认挤出长度",
+    "Default Extrude Speed": "默认挤出速度",
+    "Default toolhead move length": "默认喷头移动距离",
+    "Toolhead XY Move Speed": "XY 移动速度",
+    "Toolhead Z Move Speed": "Z 移动速度"
+  },
+  "KlippyCard": {
+    "Restart Klipper": "重启 Klipper",
+    "Firmware Restart": "重启 Firmware Klipper",
+    "Restart Moonraker": "重启 Moonraker"
+  },
+  "dialogAddInstance": {
+    "Add printer": "添加打印机",
+    "Enter your API URL": "输入你的打印机地址.",
+    "Some examples might be": "一些简单的例子：",
+    "Having trouble?": "遇到问题?",
+    "See here": "点我",
+    "for more information": "获取更多信息.",
+    "API URL": "服务地址",
+    "Cancel": "取消",
+    "Save": "保存"
+  },
+  "dialogFileEditor": {
+    "Save": "保存",
+    "Save & Close": "保存并关闭",
+    "Save & Restart": "保存并重启"
+  },
+  "inputConsoleCommand": {
+    "type `help` for available commands": "输入 help 获得更多帮助"
+  },
+  "BedMeshWidget": {
+    "No existing bed meshes found": "找不到已保存的网格床",
+    "Name": "名称",
+    "Variance": "方差",
+    "active": "激活",
+    "Load Profile": "加载配置文件",
+    "Delete Profile, This WILL restart your printer": "删除配置文件,这将会重启打印机.",
+    "Clear Profile": "清空配置文件",
+    "Calibrate": "校准",
+    "Begins a new calibration, saving as profile `default`": "开始新的校准，另存为配置文件 `default`",
+    "QGL": "龙门调平",
+    "Save Config As": "另存为",
+    "Commits calibrated profile to": "将校准的配置文件提交给",
+    "This WILL restart your printer": "这将重启打印机",
+    "If saving as something other than": "如果另存为",
+    "you can choose to also remove the": "您也可以选择删除",
+    "profile": "配置文件",
+    "Cancel": "取消",
+    "Save": "保存"
+  },
+  "DragOverlayWidget": {
+    "Drag": "拖动",
+    "a file here": "一个文件到这里"
+  },
+  "FileSystemBrowser": {
+    "No files": "没有文件",
+    "No files found": "没有找到文件",
+    "Search": "搜索",
+    "Edit preset": "编辑预设",
+    "Add preset": "添加预设",
+    "Cancel": "取消",
+    "Save": "保存",
+    "Print": "打印",
+    "Edit": "编辑",
+    "View": "查看",
+    "Download": "下载",
+    "Rename": "重命名",
+    "Remove": "删除"
+  },
+  "FileSystemControls": {
+    "Add Folder": "添加文件夹",
+    "Create File": "创建文件",
+    "Upload": "上传",
+    "Upload & Print": "上传并打印",
+    "Refresh": "刷新"
+  },
+  "UploadOverlayWidget": {
+    "Uploading": "上传中",
+    "Processing": "处理中"
+  },
+  "ExtruderMovesWidget": {
+    "Retract": "回抽",
+    "Extrude": "挤出"
+  },
+  "PrinterLimitsWidget": {
+    "Velocity": "速度",
+    "Square Corner Velocity": "转角速度",
+    "Acceleration": "加速度",
+    "Accel to Decel": "加速度到减速度"
+  },
+  "PrintStatusWidget": {
+    "used filament": "已经使用耗材"
+  },
+  "SocketDisconnectedWidget": {
+    "Connecting to printer": "连接打印机中",
+    "No printer connection": "没有链接打印机",
+    "Please check moonraker status and / or refresh": "请检查Moonraker状态或刷新。",
+    "Force Refresh": "强制刷新"
+  },
+  "SpeedAndFlowAdjustWidget": {
+    "Speed": "速度",
+    "Flow": "流量"
+  },
+  "SystemCommandsWidget": {
+    "Host": "主机",
+    "Reboot": "重启",
+    "Shutdown": "关机",
+    "Restart": "重启",
+    "Firmware Restart": "框架重启",
+    "Power Plugin": "电源插件",
+    "Services": "服务",
+    "Are you sure? This will reboot your host system": "你确定吗？ 这将重新启动系统",
+    "Are you sure? This will shutdown your host system": "你确定吗？ 这将关闭系统"
+  },
+  "SystemLayoutWidget": {
+    "Layout": "布局",
+    "Adjust dashboard layout": "调整仪表盘布局",
+    "Reset dashboard layout": "重置仪表盘布局"
+  },
+  "SystemPrintersWidget": {
+    "Printers": "打印机",
+    "Add another printer": "添加其他打印机"
+  },
+  "SystemVersionsWidget": {
+    "Software Updates": "软件更新",
+    "Check for updates": "检查所有更新"
+  },
+  "TemperatureTargetsWidget": {
+    "Item": "项",
+    "Power": "电源",
+    "Current": "当前温度",
+    "Target": "目标值",
+    "All off": "全部关闭"
+  },
+  "ToolheadPositionWidget": {
+    "Requested Speed": "需求速度"
+  },
+  "WarningsWidget": {
+    "warnings found": "有警告",
+    "Moonraker has failed plugins, please check your logs, update your configuration and restart moonraker": "Moonraker启动失败，请检查您的日志，更新配置，然后重新启动Moonraker.",
+    "Fluidd setup requirements can be found": "这里可以找到Fluidd安装要求",
+    "here": "点我",
+    "Moonraker plugin configuration can be found": "这里可以找到Moonraker插件的安装要求"
+  },
+  "ZHeightAdjustWidget": {
+    "Z Offset": "Z 调整"
+  }
+}

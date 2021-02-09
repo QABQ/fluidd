@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    title="Thermals Graph"
+    :title="$t('TemperatureGraphCard.Thermals Graph')"
     icon="$chart"
     :loading="!chartReady"
     :lazy="false"

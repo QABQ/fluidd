@@ -2,13 +2,13 @@
   <v-card-text>
     <v-row>
       <v-col cols="12" lg="8">
-        <span v-if="meshes.length === 0">No existing bed meshes found.</span>
+        <span v-if="meshes.length === 0"> {{$t('BedMeshWidget.No existing bed meshes found')}} </span>
         <v-simple-table v-if="meshes.length > 0" class="no-hover">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>{{$t('BedMeshWidget.Name')}}</th>
               <th>&nbsp;</th>
-              <th>Variance</th>
+              <th>{{$t('BedMeshWidget.Variance')}}</th>
               <th>&nbsp;</th>
             </tr>
           </thead>
@@ -23,7 +23,7 @@
                   color="secondary"
                   small
                   block>
-                  active
+                  {{$t('BedMeshWidget.active')}}
                 </v-chip>
               </td>
               <td class="grey--text text--lighten-1 text-body-1"><span v-if="mesh.active">{{ variance.toFixed(4) }}</span></td>
@@ -42,7 +42,7 @@
                       <v-icon small>$open</v-icon>
                     </v-btn>
                   </template>
-                  <span>Load Profile</span>
+                  <span>{{$t('BedMeshWidget.Load Profile')}}</span>
                 </v-tooltip>
                 <v-tooltip right>
                   <template v-slot:activator="{ on, attrs }">
@@ -59,7 +59,7 @@
                       <v-icon small>$delete</v-icon>
                     </v-btn>
                   </template>
-                  <span>Delete Profile. This WILL restart your printer.</span>
+                  <span>{{$t('BedMeshWidget.Delete Profile, This WILL restart your printer')}}</span>
                 </v-tooltip>
               </td>
             </tr>
@@ -74,7 +74,7 @@
                   :disabled="!meshLoaded"
                   color="secondary"
                   small>
-                  Clear Profile
+                  {{$t('BedMeshWidget.Clear Profile')}}
                 </v-btn>
               </td>
             </tr>
@@ -94,10 +94,10 @@
               :loading="hasWait(waits.onMeshCalibrate)"
               :disabled="hasWaits || printerPrinting || printerBusy"
               @click="calibrate()">
-              Calibrate
+              {{$t('BedMeshWidget.Calibrate')}}
             </v-btn>
           </template>
-          <span>Begins a new calibration, saving as profile 'default'</span>
+          <span>{{$t('BedMeshWidget.Begins a new calibration, saving as profile `default`')}}</span>
         </v-tooltip>
         <v-btn
           @click="sendGcode('G28', waits.onHomeAll)"
@@ -118,7 +118,7 @@
           block
           class="mb-2"
           color="secondary">
-            QGL
+          {{$t('BedMeshWidget.QGL')}}
         </v-btn>
         <v-tooltip right>
           <template v-slot:activator="{ on, attrs }">
@@ -131,16 +131,16 @@
               :elevation="2"
               :disabled="!meshLoaded || hasWaits || printerPrinting || printerBusy"
               @click="openSaveDialog()">
-              Save Config As...
+              {{$t('BedMeshWidget.Save Config As')}}...
             </v-btn>
           </template>
-          <span>Commits calibrated profile to printer.cfg. This WILL restart your printer.</span>
+          <span>{{$t('BedMeshWidget.Commits calibrated profile to')}} printer.cfg. {{$t('BedMeshWidget.This WILL restart your printer')}}</span>
         </v-tooltip>
       </v-col>
     </v-row>
 
     <v-dialog
-      title="Save config as..."
+      :title="$t('BedMeshWidget.Save Config As')"
       v-model="saveDialog.open"
       :max-width="450"
     >
@@ -152,7 +152,7 @@
       >
         <v-card color="secondary darken-1">
           <v-card-title>
-            <span class="headline">Save config as...</span>
+            <span class="headline">{{$t('BedMeshWidget.Save Config As')}}...</span>
           </v-card-title>
           <v-card-text>
 
@@ -176,15 +176,14 @@
               ></v-checkbox>
 
               <p>
-                If saving as something other than {{ currentMesh.profile_name }}, you can choose to
-                also remove the {{ currentMesh.profile_name }} profile.
+                {{$t('BedMeshWidget.If saving as something other than')}} {{ currentMesh.profile_name }}, {{$t('BedMeshWidget.you can choose to also remove the')}} {{ currentMesh.profile_name }} {{$t('BedMeshWidget.profile')}}.
               </p>
           </v-card-text>
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="warning" text @click="saveDialog.open = false" type="button">Cancel</v-btn>
-            <v-btn color="primary" :elevation="2" type="submit">Save</v-btn>
+            <v-btn color="warning" text @click="saveDialog.open = false" type="button">{{$t('BedMeshWidget.Cancel')}}</v-btn>
+            <v-btn color="primary" :elevation="2" type="submit">{{$t('BedMeshWidget.Save')}}</v-btn>
           </v-card-actions>
 
         </v-card>

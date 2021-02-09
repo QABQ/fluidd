@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    title="Misc"
+    :title="$t('GeneralSettingsCard.Misc')"
     cardKey="MiscSettings"
     icon="$cogs">
     <v-card-text>
@@ -12,7 +12,7 @@
         v-model="instanceName"
       ></v-text-field>
       <v-switch
-        label="Enable Jobs on Dashboard"
+        :label="$t('GeneralSettingsCard.Enable Jobs on Dashboard')"
         hide-details
         v-model="jobsInDash">
       </v-switch>

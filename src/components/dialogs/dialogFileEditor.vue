@@ -31,6 +31,7 @@
           class="ml-2"
           @click="emitSave(false, false, newContents, filename, path)">
           Save
+          {{$t('dialogFileEditor.Save')}}
         </v-btn>
         <v-btn
           v-if="!readonly && unsavedChanges"
@@ -39,7 +40,7 @@
           color="warning"
           class="ml-2"
           @click="emitSave(true, false, newContents, filename, path)">
-          Save &amp; Close
+          {{$t('dialogFileEditor.Save & Close')}}
         </v-btn>
         <v-btn
           v-if="!readonly && unsavedChanges && !printerPrinting"
@@ -48,7 +49,7 @@
           color="error"
           class="ml-2"
           @click="emitSave(true, true, newContents, filename, path)">
-          Save &amp; Restart
+          {{$t('dialogFileEditor.Save & Restart')}}
         </v-btn>
       </v-toolbar>
       <v-card-text>

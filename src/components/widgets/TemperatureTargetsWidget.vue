@@ -2,17 +2,17 @@
   <v-card-text>
     <v-row>
       <v-col class="text-subtitle-1 grey--text text--darken-1 d-none d-sm-flex">
-        Item
+        {{$t('TemperatureTargetsWidget.Item')}}
       </v-col>
       <v-col cols="2" class="text-subtitle-1 grey--text text--darken-1 d-none d-sm-flex">
-        Power
+        {{$t('TemperatureTargetsWidget.Power')}}
       </v-col>
       <v-col cols="6" sm="3" class="text-subtitle-1 grey--text text--darken-1">
-        Current
+        {{$t('TemperatureTargetsWidget.Current')}}
       </v-col>
       <v-col sm="4" class="text-subtitle-1 grey--text text--darken-1">
         <v-layout>
-          <span class="">Target</span>
+          <span class="">{{$t('TemperatureTargetsWidget.Target')}}</span>
           <v-spacer></v-spacer>
           <v-menu bottom left offset-y :min-width="150">
             <template v-slot:activator="{ on, attrs }">
@@ -33,7 +33,7 @@
                 link>
                 <v-list-item-title>
                   <v-icon small left color="cyan">$snowflakeAlert</v-icon>
-                  All off
+                  {{$t('TemperatureTargetsWidget.All off')}}
                 </v-list-item-title>
               </v-list-item>
               <v-list-item

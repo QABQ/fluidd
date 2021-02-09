@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    title="Tabbed Tools"
+    title="$t('ToolsCard.Tabbed Tools')"
     icon="$tabs"
     :draggable="true"
     :inLayout="inLayout"
@@ -9,7 +9,7 @@
 
     <template v-slot:title v-if="!showTabs && !inLayout">
       <v-icon left>$fire</v-icon>
-      <span class="font-weight-light">Thermals</span>
+      <span class="font-weight-light">{{$t('AppBar.Thermals')}}</span>
     </template>
 
     <template v-slot:tabbed-title="{ attrs, on }" v-if="showTabs && !inLayout">
@@ -22,11 +22,11 @@
       >
         <v-tab :key="'targets'" :disabled="inLayout || attrs.isCollapsed">
           <v-icon left>$fire</v-icon>
-          Thermals
+          {{$t('AppBar.Thermals')}}
         </v-tab>
         <v-tab :key="'jobs'" v-if="klippyConnected && jobsInDash" :disabled="inLayout || attrs.isCollapsed">
           <v-icon left>$files</v-icon>
-          Jobs
+          {{$t('AppBar.Jobs')}}
         </v-tab>
         <btn-collapse
           class="align-self-center ml-1 mr-4"

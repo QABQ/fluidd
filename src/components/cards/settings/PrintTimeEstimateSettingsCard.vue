@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    title="Print Times"
+    :title="$t('PrintTimeEstimateSettingsCard.Print Times')"
     cardKey="PrintTimeSettings"
     icon="$clock">
     <v-card-text>
@@ -10,9 +10,9 @@
         :mandatory="true">
         <v-radio value="totals">
           <template v-slot:label>
-            Duration Only
+            {{$t('PrintTimeEstimateSettingsCard.Duration Only')}}
             <inline-help bottom small class="ml-2">
-              Similar to a klipper LCD, this only shows duration with no estimates.
+              {{$t('PrintTimeEstimateSettingsCard.Similar to a klipper LCD, this only shows duration with no estimates')}}
             </inline-help>
           </template>
         </v-radio>
@@ -20,7 +20,7 @@
           <template v-slot:label>
             Slicer
             <inline-help bottom small class="ml-2">
-              Uses the slicer estimates for display. You must enable this in your slicer.
+              {{$t('PrintTimeEstimateSettingsCard.Uses the slicer estimates for display, You must enable this in your slicer')}}
             </inline-help>
           </template>
         </v-radio>
@@ -28,8 +28,8 @@
           <template v-slot:label>
             File Estimation
             <inline-help bottom small class="ml-2">
-              Takes progress percent, and duration to estimate total duration.<br />
-              More accurate over time.
+              {{$t('PrintTimeEstimateSettingsCard.Takes progress percent, and duration to estimate total duration')}}<br />
+              {{$t('PrintTimeEstimateSettingsCard.More accurate over time')}}
             </inline-help>
           </template>
         </v-radio>
@@ -37,8 +37,8 @@
           <template v-slot:label>
             Filament
             <inline-help bottom small class="ml-2">
-              Takes used filament vs estimated filament to estimate total duration.<br />
-              More accurate over time.
+              {{$t('PrintTimeEstimateSettingsCard.Takes used filament vs estimated filament to estimate total duration')}}<br />
+              {{$t('PrintTimeEstimateSettingsCard.More accurate over time')}}
             </inline-help>
           </template>
         </v-radio>

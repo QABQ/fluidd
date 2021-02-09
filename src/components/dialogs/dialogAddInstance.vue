@@ -13,11 +13,11 @@
       <v-card color="secondary darken-1">
 
         <v-card-title>
-          <span class="headline">Add printer</span>
+          <span class="headline">{{$t('dialogAddInstance.Add printer')}}</span>
           <v-spacer></v-spacer>
           <inline-help bottom>
-            Enter your API URL.<br />
-            Some examples might be;<br />
+            {{$t('dialogAddInstance.Enter your API URL')}}<br />
+            {{$t('dialogAddInstance.Some examples might be')}}<br />
             <blockquote>
               http://fluidd.local,
               http://192.168.1.150
@@ -26,12 +26,12 @@
         </v-card-title>
 
         <v-card-text>
-          Having trouble? <a :href="docsUrl" target="_blank">See here</a> for more information.<br />
+          {{$t('dialogAddInstance.Having trouble?')}} <a :href="docsUrl" target="_blank">{{$t('dialogAddInstance.See here')}}</a> {{$t('dialogAddInstance.for more information')}}<br />
 
           <v-text-field
             v-model="url"
             autofocus
-            label="API URL"
+            :label="$t('dialogAddInstance.API URL')"
             persistent-hint
             hint="E.g., http://fluiddpi.local"
             :loading="verifying"
@@ -48,8 +48,8 @@
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="warning" text @click="$emit('input', false)" type="button">Cancel</v-btn>
-          <v-btn color="primary" type="submit" :disabled="!verified">Save</v-btn>
+          <v-btn color="warning" text @click="$emit('input', false)" type="button">{{$t('dialogAddInstance.Cancel')}}</v-btn>
+          <v-btn color="primary" type="submit" :disabled="!verified">{{$t('dialogAddInstance.Save')}}</v-btn>
         </v-card-actions>
 
       </v-card>

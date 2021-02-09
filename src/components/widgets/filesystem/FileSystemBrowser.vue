@@ -12,8 +12,8 @@
       :search="search"
       item-key="name"
       height="100%"
-      no-data-text="No files"
-      no-results-text="No files found"
+      :no-data-text="$t('FileSystemBrowser.No files')"
+      :no-results-text="$t('FileSystemBrowser.No files found')"
       sort-by="modified"
       hide-default-footer
     >
@@ -28,7 +28,7 @@
           <v-col cols="4" class="d-none d-sm-block">
             <v-text-field
               v-model="search"
-              label="Search"
+              :label="$t('FileSystemBrowser.Search')"
               outlined
               flat
               dense
@@ -67,7 +67,7 @@
 
             <v-card color="secondary darken-1">
               <v-card-title>
-                <span class="headline">{{ (dialog.index >= 0) ? 'Edit preset' : 'Add preset' }}</span>
+                <span class="headline">{{ $t('FileSystemBrowser'+(dialog.index >= 0) ? 'Edit preset' : 'Add preset') }}</span>
               </v-card-title>
               <v-card-text>
 
@@ -82,8 +82,8 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="warning" text @click="dialog.active = false" type="button">Cancel</v-btn>
-                <v-btn color="primary" :elevation="2" type="submit">Save</v-btn>
+                <v-btn color="warning" text @click="dialog.active = false" type="button">{{$t('FileSystemBrowser.Cancel')}}</v-btn>
+                <v-btn color="primary" :elevation="2" type="submit">{{$t('FileSystemBrowser.Save')}}</v-btn>
               </v-card-actions>
             </v-card>
 
@@ -173,7 +173,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$printer</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">Print</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.Print')}}</v-list-item-title>
               </v-list-item>
               <v-list-item
                 link
@@ -182,7 +182,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$pencil</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">Edit</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.Edit')}}</v-list-item-title>
               </v-list-item>
               <v-list-item
                 link
@@ -191,7 +191,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$magnify</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">View</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.View')}}</v-list-item-title>
               </v-list-item>
               <v-list-item
                 link
@@ -200,7 +200,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$download</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">Download</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.Download')}}</v-list-item-title>
               </v-list-item>
               <v-list-item
                 link
@@ -209,7 +209,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$rename</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">Rename</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.Rename')}}</v-list-item-title>
               </v-list-item>
               <v-list-item
                 link
@@ -218,7 +218,7 @@
                 <v-list-item-icon>
                   <v-icon class="white--text">$delete</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title class="white--text">Remove</v-list-item-title>
+                <v-list-item-title class="white--text">{{$t('FileSystemBrowser.Remove')}}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-col>

@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    title="Console"
+    :title="$t('ConsoleCard.Console')"
     icon="$console"
     cardClasses="mb-2 mb-sm-4 d-flex flex-column"
     contentClasses="flex-grow-1 flow-shrink-0"
@@ -19,7 +19,7 @@
         color="primary"
         class="ma-2"
         hide-details
-        label="Hide temp waits"
+        :label="$t('ConsoleCard.Hide temp waits')"
       >
       </v-checkbox>
     </template>

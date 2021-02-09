@@ -1,0 +1,8 @@
+{
+  "AppBar": {
+    "Dashboard": "仪表盘",
+    "Jobs": "任务列表",
+    "Printer": "打印机",
+    "Emergency Stop": "紧急停止"
+  }
+}
